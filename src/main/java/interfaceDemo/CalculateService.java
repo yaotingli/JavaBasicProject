@@ -2,6 +2,8 @@ package interfaceDemo;
 
 public interface CalculateService {
 
+    public final static int DEFAULT_VALUE = 0;
+
     /**
      * 加法
      *
