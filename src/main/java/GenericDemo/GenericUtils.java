@@ -1,6 +1,6 @@
 package GenericDemo;
 
-public class GeneratorUtils<T> {
+public class GenericUtils<T> {
 
     public T fun1(T t) {
         return t;
@@ -12,10 +12,10 @@ public class GeneratorUtils<T> {
 
     public static void main(String[] args) {
         Integer i = new Integer(1);
-        Integer fun2 = GeneratorUtils.fun2(i);
+        Integer fun2 = GenericUtils.fun2(i);
         System.out.println(fun2.intValue());
 
-        GeneratorUtils<String> ut = new GeneratorUtils<>();
+        GenericUtils<String> ut = new GenericUtils<>();
         System.out.println(ut.fun1("fun1"));
     }
 }
